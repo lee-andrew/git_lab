@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 10000px; /* this is just to make sure you can scroll */
+    
+}
+
+/* START CODING BELOW */
+a {
+    text-decoration:none; 
+    color: black;
+}
+
+.header {
+    width:100%;
+    top: 0;
+}
+
+/* Add a transparent black bar to the top navigation */
+.navbar {
+    background-color: black;
+    opacity: 0.8;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+
+.navbar a {
+    display: inline-block;
+}
+
+.logo{
+    width:210px;
+}
+
+.bg-container {
+    display:block;
+    width: 100%;
+    height:600px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*
+    background: #FFF url(assets/images/header-background.jpg) no-repeat center top;
+    background-size: 100%;
+    
+    border-style: solid;
+    border-width: 5px;*/
+}
+
+.bg-container img {
+    max-width: 100%;
+    /*
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%);
+    width: 100%;
+    */
+}
+
+.content {
+    vertical-align: middle;
+    position: absolute;
+    top:30%;
+    left:0;
+    right:0;
+}
+
+.content h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #2888e6;
+}
+
+.side-menu {
+    display: inline-block;
+    width: 12%;
+    padding:20px;
+    font-size:1.25em;
+}
+
+.side-menu a {
+    display: inline-block;
+    color: blue;
+}
+
+.side-menu a:hover {
+    background-color: grey;
+    font-weight: bold;
+}
+
+ul#side-menu-list{
+  list-style-type: none;
+  width: 100%;
+}
+
+.side-menu-item {
+    margin: 10px;
+}
+
+.courses {
+    display: block;
+    overflow: hidden;
+}
+
+.courses-nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 87%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding:20px 20px 0px 20px;
+}
+
+.courses-nav h1 {
+    display: block;
+    font-size: 1.5em;
+    color: blue;
+    padding-left: 50px;
+}
+
+
+
+ul#courses-list{
+  list-style-type: none;
+  width: 100%;
+}
+
+
+.courses-item{
+    display: inline-block;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    height: 120px;
+    width:20%;
+    padding: 10px;
+    border-bottom: none;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom:-30px;
+    font-weight: bold;
+    background-color: white;
+    vertical-align: top;
+}
+
+#courses-list a:hover {
+    background-color: grey;
+}
